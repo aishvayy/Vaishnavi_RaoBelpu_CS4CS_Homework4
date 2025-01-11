@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en-de">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to my Homepage</h1>
+        </header>
+        <main>
+            <section class="personal-info">
+                <form>
+                    <fieldset>
+                        <legend>Personal Info</legend>
+                        <div style="float: left">
+                            <label for="fname">Name:</label>
+                            <input type="text" id="fname" class="name-field" name="fname" data-error="error1"><br />
+                            <span id="error1" class="error"></span><br />
+                            <label for="mname">Middle Initial:</label>
+                            <input type="text" id="mname" class="name-field" name="mname" data-error="error2"><br />
+                            <span id="error2" class="error"></span> <br />
+                            <label for="lname">Last Name:</label>
+                            <input type="text" id="lname" class="name-field" name="lname" data-error="error3"><br />
+                            <span id="error3" class="error"></span><br />
+                            <label for="countries">I am From:</label>
+                            <select id="countries" name="countries">
+                                <option value="">Choose your Country</option>
+                                <option value="Afghanistan">Afghanistan</option>
+                                <option value="Albania">Albania</option>
+                                <option value="Algeria">Algeria</option>
+                                <option value="Andorra">Andorra</option>
+                                <option value="Angola">Angola</option>
+                                <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                                <option value="Argentina">Argentina</option>
+                                <option value="Armenia">Armenia</option>
+                                <option value="Australia">Australia</option>
+                                <option value="Austria">Austria</option>
+                                <option value="Azerbaijan">Azerbaijan</option>
+                                <option value="Bahamas">Bahamas</option>
+                                <option value="Bahrain">Bahrain</option>
+                                <option value="Bangladesh">Bangladesh</option>
+                                <option value="Barbados">Barbados</option>
+                                <option value="Belarus">Belarus</option>
+                                <option value="Belgium">Belgium</option>
+                                <option value="Belize">Belize</option>
+                                <option value="Benin">Benin</option>
+                                <option value="Bhutan">Bhutan</option>
+                                <option value="Bolivia">Bolivia</option>
+                                <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                                <option value="Botswana">Botswana</option>
+                                <option value="Brazil">Brazil</option>
+                                <option value="Brunei">Brunei</option>
+                                <option value="Bulgaria">Bulgaria</option>
+                                <option value="Burkina Faso">Burkina Faso</option>
+                                <option value="Burundi">Burundi</option>
+                                <option value="Cabo Verde">Cabo Verde</option>
+                                <option value="Cambodia">Cambodia</option>
+                                <option value="Cameroon">Cameroon</option>
+                                <option value="Canada">Canada</option>
+                                <option value="Central African Republic">Central African Republic</option>
+                                <option value="Chad">Chad</option>
+                                <option value="Chile">Chile</option>
+                                <option value="China">China</option>
+                                <option value="Colombia">Colombia</option>
+                                <option value="Comoros">Comoros</option>
+                                <option value="Congo (Congo-Brazzaville)">Congo (Congo-Brazzaville)</option>
+                                <option value="Costa Rica">Costa Rica</option>
+                                <option value="Croatia">Croatia</option>
+                                <option value="Cuba">Cuba</option>
+                                <option value="Cyprus">Cyprus</option>
+                                <option value="Czechia (Czech Republic)">Czechia (Czech Republic)</option>
+                                <option value="Denmark">Denmark</option>
+                                <option value="Djibouti">Djibouti</option>
+                                <option value="Dominica">Dominica</option>
+                                <option value="Dominican Republic">Dominican Republic</option>
+                                <option value="Ecuador">Ecuador</option>
+                                <option value="Egypt">Egypt</option>
+                                <option value="El Salvador">El Salvador</option>
+                                <option value="Equatorial Guinea">Equatorial Guinea</option>
+                                <option value="Eritrea">Eritrea</option>
+                                <option value="Estonia">Estonia</option>
+                                <option value="Eswatini (fmr. Swaziland)">Eswatini (fmr. Swaziland)</option>
+                                <option value="Ethiopia">Ethiopia</option>
+                                <option value="Fiji">Fiji</option>
+                                <option value="Finland">Finland</option>
+                                <option value="France">France</option>
+                                <option value="Gabon">Gabon</option>
+                                <option value="Gambia">Gambia</option>
+                                <option value="Georgia">Georgia</option>
+                                <option value="Germany">Germany</option>
+                                <option value="Ghana">Ghana</option>
+                                <option value="Greece">Greece</option>
+                                <option value="Grenada">Grenada</option>
+                                <option value="Guatemala">Guatemala</option>
+                                <option value="Guinea">Guinea</option>
+                                <option value="Guinea-Bissau">Guinea-Bissau</option>
+                                <option value="Guyana">Guyana</option>
+                                <option value="Haiti">Haiti</option>
+                                <option value="Holy See">Holy See</option>
+                                <option value="Honduras">Honduras</option>
+                                <option value="Hungary">Hungary</option>
+                                <option value="Iceland">Iceland</option>
+                                <option value="India">India</option>
+                                <option value="Indonesia">Indonesia</option>
+                                <option value="Iran">Iran</option>
+                                <option value="Iraq">Iraq</option>
+                                <option value="Ireland">Ireland</option>
+                                <option value="Israel">Israel</option>
+                                <option value="Italy">Italy</option>
+                                <option value="Jamaica">Jamaica</option>
+                                <option value="Japan">Japan</option>
+                                <option value="Jordan">Jordan</option>
+                                <option value="Kazakhstan">Kazakhstan</option>
+                                <option value="Kenya">Kenya</option>
+                                <option value="Kiribati">Kiribati</option>
+                                <option value="Korea (North)">Korea (North)</option>
+                                <option value="Korea (South)">Korea (South)</option>
+                                <option value="Kuwait">Kuwait</option>
+                                <option value="Kyrgyzstan">Kyrgyzstan</option>
+                                <option value="Laos">Laos</option>
+                                <option value="Latvia">Latvia</option>
+                                <option value="Lebanon">Lebanon</option>
+                                <option value="Lesotho">Lesotho</option>
+                                <option value="Liberia">Liberia</option>
+                                <option value="Libya">Libya</option>
+                                <option value="Liechtenstein">Liechtenstein</option>
+                                <option value="Lithuania">Lithuania</option>
+                                <option value="Luxembourg">Luxembourg</option>
+                                <option value="Madagascar">Madagascar</option>
+                                <option value="Malawi">Malawi</option>
+                                <option value="Malaysia">Malaysia</option>
+                                <option value="Maldives">Maldives</option>
+                                <option value="Mali">Mali</option>
+                                <option value="Malta">Malta</option>
+                                <option value="Marshall Islands">Marshall Islands</option>
+                                <option value="Mauritania">Mauritania</option>
+                                <option value="Mauritius">Mauritius</option>
+                                <option value="Mexico">Mexico</option>
+                                <option value="Micronesia">Micronesia</option>
+                                <option value="Moldova">Moldova</option>
+                                <option value="Monaco">Monaco</option>
+                                <option value="Mongolia">Mongolia</option>
+                                <option value="Montenegro">Montenegro</option>
+                                <option value="Morocco">Morocco</option>
+                                <option value="Mozambique">Mozambique</option>
+                                <option value="Myanmar (formerly Burma)">Myanmar (formerly Burma)</option>
+                                <option value="Namibia">Namibia</option>
+                                <option value="Nauru">Nauru</option>
+                                <option value="Nepal">Nepal</option>
+                                <option value="Netherlands">Netherlands</option>
+                                <option value="New Zealand">New Zealand</option>
+                                <option value="Nicaragua">Nicaragua</option>
+                                <option value="Niger">Niger</option>
+                                <option value="Nigeria">Nigeria</option>
+                                <option value="North Macedonia">North Macedonia</option>
+                                <option value="Norway">Norway</option>
+                                <option value="Oman">Oman</option>
+                                <option value="Pakistan">Pakistan</option>
+                                <option value="Palau">Palau</option>
+                                <option value="Palestine State">Palestine State</option>
+                                <option value="Panama">Panama</option>
+                                <option value="Papua New Guinea">Papua New Guinea</option>
+                                <option value="Paraguay">Paraguay</option>
+                                <option value="Peru">Peru</option>
+                                <option value="Philippines">Philippines</option>
+                                <option value="Poland">Poland</option>
+                                <option value="Portugal">Portugal</option>
+                                <option value="Qatar">Qatar</option>
+                                <option value="Romania">Romania</option>
+                                <option value="Russia">Russia</option>
+                                <option value="Rwanda">Rwanda</option>
+                                <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                                <option value="Saint Lucia">Saint Lucia</option>
+                                <option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines
+                                </option>
+                                <option value="Samoa">Samoa</option>
+                                <option value="San Marino">San Marino</option>
+                                <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                                <option value="Saudi Arabia">Saudi Arabia</option>
+                                <option value="Senegal">Senegal</option>
+                                <option value="Serbia">Serbia</option>
+                                <option value="Seychelles">Seychelles</option>
+                                <option value="Sierra Leone">Sierra Leone</option>
+                                <option value="Singapore">Singapore</option>
+                                <option value="Slovakia">Slovakia</option>
+                                <option value="Slovenia">Slovenia</option>
+                                <option value="Solomon Islands">Solomon Islands</option>
+                                <option value="Somalia">Somalia</option>
+                                <option value="South Africa">South Africa</option>
+                                <option value="South Sudan">South Sudan</option>
+                                <option value="Spain">Spain</option>
+                                <option value="Sri Lanka">Sri Lanka</option>
+                                <option value="Sudan">Sudan</option>
+                                <option value="Suriname">Suriname</option>
+                                <option value="Sweden">Sweden</option>
+                                <option value="Switzerland">Switzerland</option>
+                                <option value="Syria">Syria</option>
+                                <option value="Tajikistan">Tajikistan</option>
+                                <option value="Tanzania">Tanzania</option>
+                                <option value="Thailand">Thailand</option>
+                                <option value="Timor-Leste">Timor-Leste</option>
+                                <option value="Togo">Togo</option>
+                                <option value="Tonga">Tonga</option>
+                                <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                                <option value="Tunisia">Tunisia</option>
+                                <option value="Turkey">Turkey</option>
+                                <option value="Turkmenistan">Turkmenistan</option>
+                                <option value="Tuvalu">Tuvalu</option>
+                                <option value="Uganda">Uganda</option>
+                                <option value="Ukraine">Ukraine</option>
+                                <option value="United Arab Emirates">United Arab Emirates</option>
+                                <option value="United Kingdom">United Kingdom</option>
+                                <option value="United States">United States</option>
+                                <option value="Uruguay">Uruguay</option>
+                                <option value="Uzbekistan">Uzbekistan</option>
+                                <option value="Vanuatu">Vanuatu</option>
+                                <option value="Vatican City">Vatican City</option>
+                                <option value="Venezuela">Venezuela</option>
+                                <option value="Vietnam">Vietnam</option>
+                                <option value="Yemen">Yemen</option>
+                                <option value="Zambia">Zambia</option>
+                                <option value="Zimbabwe">Zimbabwe</option>
+                            </select>
+
+                        </div>
+                        <div style="float: right">
+                            <label for="matriculation">Matriculation:</label>
+                            <input type="number" id="matriculation" name="matriculation" pattern="^[0-9]*$"><br /><br />
+                            <label for="sem">Semester:</label>
+                            <input type="text" id="sem" name="sem"><br /><br />
+                            <label for="program">Program:</label>
+                            <select id="program" name="program">
+                                <option value="">Choose your Program</option>
+                                <option value="CS Big Data and AI">Computer Science - Big Data and Artificial
+                                    Intelligence
+                                </option>
+                                <option value="IM Creative Leadership">International Management - Creative Leadership
+                                </option>
+                                <option value="CS Cyber Security">Computer Science - Cyber Security</option>
+                                <option value="Erasmus CyberMACS">Erasmus Mundus Joint Master's Programme - CyberMACS |
+                                    Applied
+                                    Cybersecurity</option>
+                                <option value="Digital Supply Chain">Supply Chain Management - Digital Supply Chain
+                                    Management
+                                </option>
+                                <option value="IM Entrepreneurship and Intrapreneurship">International Management -
+                                    Entrepreneurship
+                                    and Intrapreneurship</option>
+                                <option value="Film, TV, Digital Narratives">Film, Television and Digital Narratives
+                                </option>
+                                <option value="Sustainable Tech Industry 4.0">Engineering and Sustainable Technology
+                                    Management -
+                                    Industry 4.0: Automation, Robotics & 3D Manufacturing</option>
+                                <option value="IM">International Management</option>
+                                <option value="Sustainable Tech Mobility and Auto">Engineering and Sustainable
+                                    Technology
+                                    Management
+                                    - Mobility and Automotive Industry</option>
+                                <option value="Photography">Photography</option>
+                                <option value="EIB Management">Engineering and International Business - Renewable
+                                    Energy,
+                                    Water and
+                                    Waste Management</option>
+                                <option value="Sustainable Tech Smart Building">Engineering and Sustainable Technology
+                                    Management -
+                                    Smart Building Technologies</option>
+                                <option value="Social Design & Sustainable Innovation">Social Design & Sustainable
+                                    Innovation
+                                </option>
+                                <option value="Strategic Design">Strategic Design</option>
+                                <option value="Supply Chain Management">Supply Chain Management</option>
+                                <option value="Sustainable Battery Production Engineering | Dual">Sustainable Battery
+                                    Production
+                                    Engineering | Dual</option>
+                                <option value="Sustainable Supply Chain Management">Supply Chain Management -
+                                    Sustainable
+                                    Supply
+                                    Chain Management</option>
+                            </select><br /><br />
+                            <label for="courseStart">Started in:</label>
+                            <input type="date" id="courseStart" name="courseStart">
+                        </div>
+
+                    </fieldset>
+                </form>
+            </section>
+
+            <section class="program-info-future-plans">
+                <form>
+                    <p>I have heard about this graduate program from:</p>
+                    <input type="checkbox" id="media" name="media" />
+                    <label for="media">Media</label><input type="checkbox" id="advertisement" name="advertisement" />
+                    <label for="advertisement">Advertisement</label><input type="checkbox" id="agency" name="agency" />
+                    <label for="agency">Agency</label><input type="checkbox" id="other" name="other" />
+                    <label for="other">Other</label><br /><br />
+                    <p>When I finish my studies, I will</p>
+                    <input type="radio" id="return" name="future" value="return" />
+                    <label for="return">Return to my home country</label><br /><input type="radio" id="job"
+                        name="future" value="job" />
+                    <label for="job">Find a job in Europe</label><br /><input type="radio" id="training" name="future"
+                        value="training" />
+                    <label for="training">Do the practical training and then decide</label>
+                </form>
+            </section>
+
+            <section class="feedback">
+                <p class="feedback-intro">Feedback for the course:</p>
+                <p>The course "Software Development and its Applications" has helped me hone my skills as a programmer
+                    by
+                    creating a structure for my learnings.<br /> I got the opportunity to revisit my
+                    understanding of the C programming language, that solidified my basics of Object Oriented
+                    Programming,
+                    the most essential tool in the box of a well-rounded programmer. <br /> The lectures were online,
+                    which
+                    caused a slight disconnect in the initial days of my classes, however my Professor, Dr. Hasan Dag,
+                    made
+                    this tediousness easier by not only explaining concepts in an easy-to-follow manner, but also being
+                    readily available online to answer all my queries. <br /> We started the course with OOP concepts
+                    and
+                    slowly built our way up to JavaScript, HTML, and CSS; and my favourite part of the course has
+                    definitely
+                    been the creative programming challenges given to us as homework. The questions have been crafted
+                    with
+                    an eye for ensuring the smallest lessons are driven home when we sit down to solve it. <br />
+                    Overall,
+                    my experience has been very rewarding and enriching, and I hope to take the learnings with me for a
+                    long
+                    time.</p>
+            </section>
+            <section class="learnings">
+                <article>
+                    <p class="learning-intro">I will write a paragraph for each methodology of <a
+                            href="https://www.geeksforgeeks.org/software-development-life-cycle-sdlc/"
+                            target="_blank">SDLC</a>. There are many of them but I will suggest a few. My suggestion and
+                        reasons are as follows:</p>
+                    <p>(a) <b><i>The Waterfall Model</i></b>: Although not very widely used in software/product development these
+                        days, I
+                        have included the Waterfall Model as it is the fundamental SDLC model from which all other SDLC
+                        models have evolved. The disadvantages are often talked about, the biggest being that it leaves
+                        very
+                        little to no room for changes once a particular phase is completed, rendering it unflexible. I
+                        will
+                        discuss its nature and advantages which have made it so popular in its early days of use. The
+                        Waterfall Model is named thus because of the linear and logical manner in which projects that
+                        follow
+                        this model proceed, resembling the way water flows off cliffs in a waterfall. As pointed out
+                        earlier, there is rarely any scope for change or client/end user feedback in the multiple phases
+                        of
+                        a waterfall model - this means that requirements must be clearly defined initially, while also
+                        paying specific attention to good documentation, the cornerstone of any good product. Projects
+                        adhering to the Waterfall Model are very well documented which make it an attractive option. A
+                        common feature of the Waterfall Model which makes it a good choice for projects with a huge team
+                        size and ample resources is its clearly defined steps. Each phase of the Waterfall Model depends
+                        solely on the output of the previous phase, thereby making project management easier on a high
+                        level
+                        for complicated projects to simplify end goals. Based on all the previously described points, it
+                        follows that projects that choose the Waterfall Model are always well-structured, have barely
+                        any
+                        change in expectations versus the final outcome, and are very suitable in places where a fixed
+                        timeline for the project is of utmost importance, along with the need for an application to work
+                        out
+                        of the box at the first try. All the advantages also pose as disadvantages as projects following
+                        this model are at risk of losing customers.<br /><br />
+                        (b)<b><i>The V Model</i></b>: The V Model, sometimes referred to as the "Verification" or "Validation" model,
+                        is
+                        thus named for the structure of its different phases from requirements gathering to module
+                        design
+                        and coding, each of which is associated with its own testing phase, which form two legs of the
+                        letter 'V'. This consistent testing ensures that money allocated to the project is utilised
+                        effectively, as major errors and issues are addressed at every phase before the start of the
+                        next
+                        one. Such a model also improves the group dynamics of a project by achieving an efficient level
+                        of
+                        collaboration between the development and testing teams, which makes it an incredibly attractive
+                        option for senstive projects like defense and aerospace research. The V Model gives a
+                        disciplined
+                        approach to project management while also providing quality assurance of the end product because
+                        of
+                        the high emphasis on constant testing and feedback from the testing team. <br /> <br />(c) <b><i>The
+                        Spiral Model</i></b>: In the third model of software development, I will be shedding light on the Spiral
+                        Model, a risk-driven SDLC. A combination of the Waterfall and the Iterative Models, this SDLC
+                        methodology lays special emphasis on risk management through its many phases. It is called a
+                        Spiral
+                        Model because of its diagrammatic representation of a spiral, each loop pertaining to one
+                        particular
+                        phase of the project. The number of phases of this SDLC are dynamic and determined by the
+                        manager,
+                        with continuous risk analysis and feedback from the clients that are subject to changes. With
+                        this
+                        kind of flexibility, it is well suited for large projects that come with high levels of risk.
+                        The
+                        spiral is divided into four quadrants, with the radius at any point depicting the cost incurred
+                        and
+                        the angular dimensions represent the progress made. With one spiral depicting the step-wise
+                        planning
+                        nature of the Waterfall Model, the repeated spirals depict further iterations to refine the
+                        process
+                        and come back to redefining some core characteristics of the project based on the risk analysis.
+                        <br /> <br />
+                        <i>Among so many SDLC methodologies, the ones that are in the Agile classification are better.
+                        Agile
+                        SDLC model offers a flexible and iterative approach to software development, promoting
+                        continuous
+                        collaboration, rapid delivery, and responsiveness to change. Among Agile SDLC methods, I have
+                        the
+                        following suggestions</i>:<br /><br />(a)<b><i> Scrum Methodology</i></b>: One of the newest SDLCs catered to the
+                        increasingly fast-paced world of technology we inhabit today, the Agile SDLC was created with a
+                        mindset to approach software development in small, manageable iterations called "sprints". Each
+                        sprint comes with its own set of deliverables, which include a recurring phase of requirements
+                        gathering, refining, development, testing, incremental release of features of the product. The
+                        sprint lasts an average of two weeks, with enhanced communication between various teams - from
+                        security to product to development to testing, and each meeting referred to as a "scrum", where
+                        the
+                        team gets together to discuss the deliverables of the sprint/week/day, depending on what suits
+                        their
+                        needs. This not only improves the group dynamics of a team, but also facilitates quick project
+                        completion with an eye for customer satisfaction as end-user testing at the end of every sprint
+                        calls for reviews from the client and incorporating them into the following
+                        sprint.<br /><br />(b)<b><i>
+                        Crystal Agile Methodology</i></b>: This is a lightweight Agile framework best suited for small projects
+                        with
+                        developers working out of a single workspace to large projects with an expanded team size. It is
+                        also divided into different colour codes like Crystal Orange, Crystal Diamond, Crystal Maroon,
+                        etc.,
+                        based on the nature of risk to human life in the project. Some colours correspond to large team
+                        sizes such as Crystal Diamond and Sapphire, and others such as Crystal Clear are for small teams
+                        of
+                        1-6 members. This method allows team members to take more control and freely exchange ideas
+                        within
+                        the team for the benefit of the product and user satisfaction.<br /><br />(c)<b><i> Feature Driven
+                        Development</i></b>: This Agile methodology was first applied in the year 1997, and involves first
+                        creating
+                        an overall model, then developing the model feature-by-feature. It is best suited for small
+                        iterations and therefore suitable for complex projects where the product is launched
+                        efficiently, is
+                        feature focused, and customer oriented.<br /><br />(d)<b><i>Dynamic Software Development Method</i></b>: This
+                        Agile methodology is based on the principle that 80% of any product can be delivered in 20% of
+                        the
+                        overall time set aside for the project. This means that in every iteration, just <i>enough</i>
+                        work
+                        is done in building and shipping the features on top of which the other features are built in
+                        subsequent iterations.<br /><br />(e) <b><i>Extreme Programming</i></b>: This model of Agile is
+                        customer-first. It
+                        involves implementing features based on "User Stories", where features are described by product
+                        managers based on user requirements. Intensive coding follows this, which has intra-team code
+                        reviews, testing (both unit and integration), and also Continuous Integration - where all code
+                        is
+                        maintained and shared on a common repository. Paired with scrum, this often produces very
+                        efficient
+                        results in the development of a software.
+                    </p>
+                    <p>In this Software Development and Applications course of <a
+                            href="https://www.srh-university.de/en/" target="_blank">SRH</a>, we learnt the
+                        following:<br />(a) Basics of
+                        object-oriented programming<br />(b) Implementation of OOP concepts with C programming language,
+                        starting from simple programs like printing "Hello world" to understanding data structures like
+                        arrays, structs, and linked lists.<br />(c) Thereafter, we also learnt how to build webpages
+                        similar
+                        to the one you are reading with the help of HTML, CSS, and Javascript.<br />(d) No software
+                        development is complete without learning about the various methodologies of building a software,
+                        where we discussed different life cycles of delivering softwares like Waterfall, V, and Agile,
+                        to
+                        name a few. Emphasis was given to Agile as the preferred methodology of building softwares in
+                        today's world.<br />(e) Our learnings were thoroughly tested with weekly homeworks on each of
+                        the
+                        concepts mentioned above.</p><br />
+                    <p>
+                        I have used <a href="https://www.w3schools.com/css/" target="_blank">CSS</a> on my webpage. The
+                        three ways to include CSS in a webpage are as follows:<br />(a) External CSS: This method allows
+                        us
+                        to include CSS for the entire webpage in a single, separate file. This is added by including a
+                        link
+                        to the location of the CSS file (with a ".css" extension) in the "link" element inside the
+                        "head"
+                        section of the HTML. For the purposes of this webpage, an external CSS has been used. For
+                        example: &lt;link rel="stylesheet" href="styles.css"&gt;<br /> (b)
+                        Internal CSS: This method of styling is used if a unique style is added to the HTML webpage, and
+                        is
+                        included by writing all the required styles enclosed within the "style" tags of the "head"
+                        section
+                        of the HTML code. For example: &lt;style&gt; body { background-color: lightblue; }
+                        &lt;/style&gt; <br /> (c) Inline CSS: Inline CSS is mainly used when we need to add styles to
+                        a
+                        singular element of the webpage, be it an article, or a section. To include inline CSS, we
+                        simply
+                        add the "style" attribute with any HTML element. For example: &lt;h1 style="color:
+                        red;"&gt;Welcome to My Webpage&lt;/h1&gt; <br /> <br /> The reasons CSS is used in a
+                        webpage
+                        are as follows: <br /> (a) CSS ("Cascading Style Sheets") are a way for us to design our
+                        webpages.
+                        It allows us to add any number of unique styles to our website, thereby making it visually
+                        appealing. <br />(b) CSS allows us to control how we want our website and the HTML which is the
+                        skeleton of the site to look on a browser. <br /> (c) CSS allows us to present our website in an
+                        easy to understand format by the end user, by adding structure to our site and paint the layout
+                        in
+                        an artistic manner.<br /> (d) CSS can be used to add effects such as animations to our website,
+                        or
+                        for simple things like text styling as well. This enhances the design of the website, similar to
+                        how
+                        a work of art becomes attractive when we paint the basic layout with colours. <br /> <br /> We
+                        also
+                        use <a href="https://www.w3schools.com/js/" target="_blank">JavaScript</a> in webpage
+                        development.
+                        The main reasons are as follows: <br /> (a) JavaScript is one of the 3 main languages of web
+                        development, the other 2 being HTML and CSS. <br /> (b) JavaScript allows us to program the
+                        behaviour of a website. <br /> (c) JavaScript's utilities include dynamically updating the
+                        content
+                        of a website, control multimedia, and implement other complex features. <br /> (c) HTML and CSS
+                        allow us to define the structure and design of a website - JavaScript controls everything else,
+                        from
+                        security to displaying interactive maps. Basically, everytime our website does something more
+                        than
+                        just displaying information to the user, JavaScript is what allows this interaction. This can be
+                        something like defining what happens when a user clicks on a button that triggers another
+                        action.
+                        <br /> (d) JavaScript enables storage of information inside variables, operations on pieces of
+                        texts
+                        (commonly referred to as strings), and essentially, allows a website to come to life and makes
+                        it
+                        useful to a customer. When a user places an order on a shopping site, it is JavaScript that
+                        contains
+                        the logic of how a cart is updated or how the user's choice of product is stored.
+                    </p>
+            </section>
+            <footer>
+                I have done this project myself, and accept the consequences if found otherwise.
+                You can reach me at vaishnavi.raobelpu@stud.srh-university.de
+            </footer>
+        </main>
+        <script>
+            const names = document.querySelectorAll('.name-field');
+
+            names.forEach(field => {
+                const errorId = field.getAttribute('data-error');
+                const errorSpan = document.getElementById(errorId);
+
+                field.addEventListener('input', function () {
+                    const nameValue = field.value;
+                    const nameRegex = /^[a-zA-Z\s]*$/;
+
+                    if (!nameRegex.test(nameValue)) {
+                        errorSpan.textContent = "Name must contain only letters and spaces.";
+                    } else {
+                        errorSpan.textContent = "";
+                    }
+                });
+            });
+        </script>
+    </div>
+</body>
+
+</html>
