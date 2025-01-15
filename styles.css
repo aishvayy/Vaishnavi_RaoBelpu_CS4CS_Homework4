@@ -263,7 +263,6 @@ footer a:hover {
     }
 
     form input[type="text"],
-    form input[type="email"],
     form select,
     form textarea {
         font-size: 0.9rem;
